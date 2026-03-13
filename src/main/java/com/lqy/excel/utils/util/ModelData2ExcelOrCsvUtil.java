@@ -31,6 +31,14 @@ import java.util.stream.Collectors;
 @Slf4j
 public class ModelData2ExcelOrCsvUtil {
     /**
+     * 使用方法说明：
+     * 1、创建一个实体类，并打上ExcelColumn注解，指定表头名称和排序等信息；
+     * 1.1、创建一个实体类，并打上ExcelColumn注解，指定表头名称和排序等信息；可以将List<T>数据转换成Excel或者Csv文件，或者将Excel或者Csv文件转换成List<T>数据。
+     * 1.2、创建一个实体类，并打上ExcelColumn注解，可以通过importable或exportable注解，指定该字段是否参与导入或导出；
+     * 1.3、创建一个实体类，对于没有ExcelColumn注解的属性字段，将忽略不处理；
+     * 2、List<T> --> Excel 时创建的文件会通过MAX_ROWS_PER_SHEET进行自动分页；Excel --> List<T> 时，只读第一个sheet，将Excel文件转换成List<T>数据。
+     */
+    /**
      * 文件类型枚举
      */
     public enum FileType {
