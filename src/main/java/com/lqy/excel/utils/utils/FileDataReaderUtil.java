@@ -1,4 +1,4 @@
-package com.lqy.excel.utils.util;
+package com.lqy.excel.utils.utils;
 
 import com.opencsv.CSVReader;
 import lombok.extern.slf4j.Slf4j;
@@ -24,7 +24,7 @@ import java.util.stream.Collectors;
  * @Date: 2026/3/6 15:58
  **/
 @Slf4j
-public class FileDataReaderUtils {
+public class FileDataReaderUtil {
     /**
      * 泛型读取 CSV 或 Excel 文件
      *

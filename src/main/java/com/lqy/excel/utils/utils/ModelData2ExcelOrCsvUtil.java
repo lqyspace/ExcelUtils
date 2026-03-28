@@ -1,4 +1,4 @@
-package com.lqy.excel.utils.util;
+package com.lqy.excel.utils.utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.lqy.excel.utils.annotation.ExcelColumn;
